@@ -5,6 +5,9 @@ ruby "3.2.2"
 # Use main development branch of Rails
 gem "rails", github: "rails/rails", branch: "main"
 
+# For .env, needs require 'dotenv/load' in application.rb
+gem 'dotenv-rails'
+
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
