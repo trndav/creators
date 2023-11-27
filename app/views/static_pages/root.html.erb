@@ -1,2 +1,6 @@
 <h1>StaticPages#root</h1>
 <p>Find me in app/views/static_pages/root.html.erb</p>
+<p><%= link_to "Sign In", new_user_session_path %> | <%= link_to "Create Account", new_user_registration_path %></p>
+<% if current_user %>
+    <%= link_to "Logout", destroy_user_session_path %>
+<% end %>
